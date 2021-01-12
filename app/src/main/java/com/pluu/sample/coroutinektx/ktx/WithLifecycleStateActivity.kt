@@ -22,7 +22,7 @@ class WithLifecycleStateActivity : AppCompatActivity() {
 
         viewModel.flowToLiveDataCounter.observe(this) {
             binding.tvLiveData.text = it.toString()
-            Timber.d("LiveData $it")
+            Timber.tag("Activity").d("LiveData $it")
         }
 
         // 1. LifecycleOwner.withStarted
@@ -32,7 +32,7 @@ class WithLifecycleStateActivity : AppCompatActivity() {
                     viewModel.flowCounter
                         .collect {
                             binding.tvFlow.text = it.toString()
-                            Timber.d("Flow $it")
+                            Timber.tag("Activity").d("Flow $it")
                         }
                 }
             }
@@ -44,7 +44,7 @@ class WithLifecycleStateActivity : AppCompatActivity() {
                     viewModel.channelFlowCounter
                         .collect {
                             binding.tvChannel.text = it.toString()
-                            Timber.d("ChannelFlow $it")
+                            Timber.tag("Activity").d("ChannelFlow $it")
                         }
                 }
             }
