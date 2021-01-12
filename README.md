@@ -1,0 +1,1 @@
+Blog : http://pluu.github.io/blog/android/2021/01/12/androidx-lifecycle-ktx/
