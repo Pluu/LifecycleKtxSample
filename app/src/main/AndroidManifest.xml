@@ -11,7 +11,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CoroutineKtxSample">
         <activity
-            android:name="com.pluu.sample.coroutinektx.DemoActivity"
+            android:name=".DemoActivity"
             android:theme="@style/Theme.CoroutineKtxSample">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -20,7 +20,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.pluu.sample.coroutinektx.ktx.PausingDispatcherActivity"
+            android:name=".ktx.PausingDispatcherActivity"
             android:label="1. PausingDispatcher"
             android:theme="@style/Theme.CoroutineKtxSample.NoActionBar">
             <intent-filter>
@@ -30,7 +30,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.pluu.sample.coroutinektx.ktx.WithLifecycleStateActivity"
+            android:name=".ktx.WithLifecycleStateActivity"
             android:label="2. WithLifecycleState"
             android:theme="@style/Theme.CoroutineKtxSample.NoActionBar">
             <intent-filter>
@@ -39,5 +39,26 @@
                 <category android:name="com.pluu.ui.demos.SAMPLE_CODE" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".ktx.RepeatOnLifecycleActivity"
+            android:label="3. RepeatOnLifecycle (addRepeatingJob)"
+            android:theme="@style/Theme.CoroutineKtxSample.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.pluu.ui.demos.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ktx.FlowWithLifecycleActivity"
+            android:label="4. RepeatOnLifecycle (flowWithLifecycle)"
+            android:theme="@style/Theme.CoroutineKtxSample.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.pluu.ui.demos.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
     </application>
+
 </manifest>
